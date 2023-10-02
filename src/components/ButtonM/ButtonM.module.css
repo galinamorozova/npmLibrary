@@ -1,0 +1,611 @@
+
+@import "../styleguide.css";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.btn:defined {
+  border-style: none;
+  outline: none;
+  outline-offset: none;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+button:defined {
+  border-style: none;
+  outline: none;
+  outline-offset: none;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+ 
+.button-atom-l,
+.button-atom-l * {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+} 
+
+.include-text-primary{
+  color: var(--White, #FFF);
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.99px;
+  text-transform: uppercase;
+}
+.include-text-secondary{
+  color: var(--White, #FFF);
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.99px;
+  text-transform: uppercase;
+}
+.include-text-outline{
+  color: var(--Grey-4, #4E4E5B);
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.99px;
+  text-transform: uppercase;
+} 
+.include-text-disabled{
+  color: var(--Grey-3, #808089);
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; 
+  letter-spacing: 0.99px;
+  text-transform: uppercase;
+}
+
+.button-atom-l .type-primary-hover-off-icon-none {
+  background: var(--primary-primary-40, #4551c8);
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-primary-hover-on-icon-none {
+  background: var(--primary-60, #7985fe);
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-primary-hover-off-icon-none:hover {
+  background: var(--primary-60, #7985fe);
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-primary-hover-off-icon-r {
+  background: var(--primary-primary-40, #4551c8);
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-primary-hover-on-icon-r {
+  background: var(--primary-60, #7985fe);
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-primary-hover-off-icon-r:hover {
+  background: var(--primary-60, #7985fe);
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-primary-hover-off-icon-l {
+  background: var(--primary-primary-40, #4551c8);
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-primary-hover-on-icon-l {
+  background: var(--primary-60, #7985fe);
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-primary-hover-off-icon-l:hover {
+  background: var(--primary-60, #7985fe);
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-secondary-hover-off-icon-none {
+  background: var(--secondary-1, #7F1B75);
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-secondary-hover-on-icon-none {
+  background: var(--secondary-2, #d25ab2);
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-secondary-hover-off-icon-none:hover {
+  background: var(--secondary-2, #d25ab2);
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-secondary-hover-off-icon-r {
+  background: var(--secondary-1, #7F1B75);
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-secondary-hover-on-icon-r {
+  background: var(--secondary-2, #d25ab2);
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-secondary-hover-off-icon-r:hover {
+  background: var(--secondary-2, #d25ab2);
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-secondary-hover-off-icon-l {
+  background: var(--secondary-1, #7F1B75);
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-secondary-hover-on-icon-l {
+  background: var(--secondary-2, #d25ab2);
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-secondary-hover-off-icon-l:hover {
+  background: var(--secondary-2, #d25ab2);
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-outline-hover-off-icon-none {
+  border-radius: 4px;
+  border-style: solid;
+  border-color: var(--grey-2, #c6c7d3);
+  border-width: 1px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-outline-hover-on-icon-none {
+  border-radius: 4px;
+  border-style: solid;
+  border-color: var(--grey-1, #eaecf6);
+  border-width: 1px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-outline-hover-off-icon-none:hover {
+  border-radius: 4px;
+  border-style: solid;
+  border-color: var(--grey-1, #eaecf6);
+  border-width: 1px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-outline-hover-off-icon-r {
+  border-radius: 4px;
+  border-style: solid;
+  border-color: var(--grey-2, #c6c7d3);
+  border-width: 1px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-outline-hover-on-icon-r {
+  border-radius: 4px;
+  border-style: solid;
+  border-color: var(--grey-1, #eaecf6);
+  border-width: 1px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-outline-hover-off-icon-r:hover {
+  border-radius: 4px;
+  border-style: solid;
+  border-color: var(--grey-1, #eaecf6);
+  border-width: 1px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-outline-hover-off-icon-l {
+  border-radius: 4px;
+  border-style: solid;
+  border-color: var(--grey-2, #c6c7d3);
+  border-width: 1px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-outline-hover-on-icon-l {
+  border-radius: 4px;
+  border-style: solid;
+  border-color: var(--grey-1, #eaecf6);
+  border-width: 1px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-outline-hover-off-icon-l:hover {
+  border-radius: 4px;
+  border-style: solid;
+  border-color: var(--grey-1, #eaecf6);
+  border-width: 1px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-disabled-hover-off-icon-none {
+  background: #eaecf6;
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-disabled-hover-on-icon-none {
+  background: #eaecf6;
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-disabled-hover-off-icon-none:hover {
+  background: #eaecf6;
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-disabled-hover-off-icon-r {
+  background: #eaecf6;
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-disabled-hover-on-icon-r {
+  background: #eaecf6;
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-disabled-hover-off-icon-r:hover {
+  background: #eaecf6;
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-disabled-hover-off-icon-l {
+  background: #eaecf6;
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-disabled-hover-on-icon-l {
+  background: #eaecf6;
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.button-atom-l .type-disabled-hover-off-icon-l:hover {
+  background: #eaecf6;
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+

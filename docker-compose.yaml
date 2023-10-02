@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  storybook-site:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: docker-registry.quorum.local:5000/storybook
+    command: npm run storybook
+    ports:
+      - 6006:6006
+    volumes:
+      - ./src:/storybook/src
+      - ./public:/storybook/public
+      - ./.storybook:/storybook/.storybook
+    environment:
+      - GENERATE_SOURCEMAP=false

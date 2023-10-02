@@ -1,0 +1,220 @@
+@import "../styleguide.css";
+
+.input input[id="type-primary-validation-true-placeholder-false"],
+.input input[id="type-primary-validation-false-placeholder-false"],
+.input input[id="type-primary-validation-none-placeholder-false"],
+.input input[id="type-primary-validation-true-placeholder-true"],
+.input input[id="type-primary-validation-false-placeholder-true"],
+.input input[id="type-primary-validation-none-placeholder-true"]{
+    font-size: 12px;
+    color: var(--grey-4, #4e4e5b);
+    font-family: Roboto, sans-serif;
+    background-color: var(--grey-5, #F3F6F9) !important;
+    box-sizing: border-box !important;
+    border: 1px solid var(--grey-5, #F3F6F9) !important;
+    max-height: 40px!important;
+    height: 40px!important;
+    min-height: 40px!important;
+}
+input[id="type-money-validation-true-placeholder-false"],
+input[id="type-money-validation-false-placeholder-false"],
+input[id="type-money-validation-none-placeholder-false"],
+input[id="type-money-validation-true-placeholder-true"],
+input[id="type-money-validation-false-placeholder-true"],
+input[id="type-money-validation-none-placeholder-true"]{
+    font-size: 12px;
+    color: var(--grey-4, #4e4e5b);
+    font-family: Roboto, sans-serif;
+    background-color: var(--grey-5, #F3F6F9) !important;
+    border: none !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-right: none !important;
+    border-left: 1px solid var(--grey-5, #F3F6F9) !important;
+    border-top: 1px solid var(--grey-5, #F3F6F9) !important;
+    border-bottom: 1px solid var(--grey-5, #F3F6F9) !important;
+    max-height: 40px!important;
+    height: 40px!important;
+    min-height: 40px!important;
+}
+
+.inputContainer input[id="type-primary-validation-true-placeholder-false"]::placeholder,
+.inputContainer input[id="type-primary-validation-false-placeholder-false"]::placeholder,
+.inputContainer input[id="type-primary-validation-none-placeholder-false"]::placeholder,
+.inputContainer input[id="type-money-validation-true-placeholder-false"]::placeholder,
+.inputContainer input[id="type-money-validation-false-placeholder-false"]::placeholder,
+.inputContainer input[id="type-money-validation-none-placeholder-false"]::placeholder {
+    font-size: 12px !important;
+    color: var(--grey-4, #4e4e5b) !important;
+    font-family: Roboto, sans-serif;
+}
+.inputContainer input[id="type-primary-validation-true-placeholder-true"]::placeholder,
+.inputContainer input[id="type-primary-validation-false-placeholder-true"]::placeholder,
+.inputContainer input[id="type-primary-validation-none-placeholder-true"]::placeholder,
+.inputContainer input[id="type-money-validation-true-placeholder-true"]::placeholder,
+.inputContainer input[id="type-money-validation-false-placeholder-true"]::placeholder,
+.inputContainer input[id="type-money-validation-none-placeholder-true"]::placeholder{
+    font-size: 12px !important;
+    color: var(--grey-4, #4e4e5b) !important;
+    font-family: Roboto, sans-serif;
+    position: absolute;
+    bottom: 5px;
+}
+
+label[for="input"]::after {
+    background: none !important;
+}
+input[id="type-primary-validation-true-placeholder-false"] ~ label[for="input"],
+input[id="type-primary-validation-false-placeholder-false"] ~ label[for="input"],
+input[id="type-primary-validation-none-placeholder-false"] ~ label[for="input"],
+input[id="type-money-validation-true-placeholder-false"] ~ label[for="input"],
+input[id="type-money-validation-false-placeholder-false"] ~ label[for="input"],
+input[id="type-money-validation-none-placeholder-false"] ~ label[for="input"]{
+    font-size: 12px !important;
+    color: var(--grey-4, #4e4e5b) !important;
+    font-family: Roboto, sans-serif;
+    padding: 10px!important;
+}
+input[id="type-primary-validation-true-placeholder-true"] ~ label[for="input"],
+input[id="type-primary-validation-false-placeholder-true"] ~ label[for="input"],
+input[id="type-primary-validation-none-placeholder-true"] ~ label[for="input"],
+input[id="type-money-validation-true-placeholder-true"] ~ label[for="input"],
+input[id="type-money-validation-false-placeholder-true"] ~ label[for="input"],
+input[id="type-money-validation-none-placeholder-true"] ~ label[for="input"]{
+    font-size: 10px !important;
+    color: var(--grey-4, #4e4e5b) !important;
+    font-family: Roboto, sans-serif;
+    padding-top: 5px;
+}
+.inputContainer input[id="type-primary-validation-true-placeholder-false"],
+.inputContainer input[id="type-primary-validation-true-placeholder-true"]
+{
+    border: 1px solid var(--success, #25b022) !important;
+}
+.inputContainer input[id="type-money-validation-true-placeholder-false"],
+.inputContainer input[id="type-money-validation-true-placeholder-true"]
+{
+    border-left: 1px solid var(--success, #25b022) !important;
+    border-top: 1px solid var(--success, #25b022) !important;
+    border-bottom: 1px solid var(--success, #25b022) !important;
+}
+.inputContainer input[id="type-primary-validation-false-placeholder-false"],
+.inputContainer input[id="type-primary-validation-false-placeholder-true"]
+{
+    border: 1px solid var(--error, #c62b34) !important;
+}
+.inputContainer input[id="type-money-validation-false-placeholder-false"],
+.inputContainer input[id="type-money-validation-false-placeholder-true"]
+{
+    border-left: 1px solid var(--error, #c62b34) !important;
+    border-top: 1px solid var(--error, #c62b34) !important;
+    border-bottom: 1px solid var(--error, #c62b34) !important;
+}
+.validationText {
+    text-align: right;
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+}
+input[id="type-primary-validation-true-placeholder-false"] ~ .validationText,
+input[id="type-primary-validation-true-placeholder-true"] ~ .validationText,
+div[id="type-money-validation-true-placeholder-false"] ~ .validationText,
+div[id="type-money-validation-true-placeholder-true"] ~ .validationText{
+    color: var(--success, #25b022);
+}
+input[id="type-primary-validation-false-placeholder-false"] ~ .validationText,
+input[id="type-primary-validation-false-placeholder-true"] ~ .validationText,
+div[id="type-money-validation-false-placeholder-false"] ~ .validationText,
+div[id="type-money-validation-false-placeholder-true"] ~ .validationText
+{
+    color: var(--error, #c62b34);
+}
+
+.currency {
+    position: fixed;
+    top: 0;
+}
+
+span[id="currency"] {
+    font-size: 12px;
+    color: var(--grey-4, #4e4e5b);
+    font-family: Roboto, sans-serif;
+    background-color: var(--grey-5, #F3F6F9) !important;
+    border: none !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-right: 1px solid var(--grey-5, #F3F6F9) !important;
+    border-top: 1px solid var(--grey-5, #F3F6F9) !important;
+    border-bottom: 1px solid var(--grey-5, #F3F6F9) !important;
+    border-left: none !important;
+}
+
+.inputContainer input[id="type-money-validation-true-placeholder-false"] ~ span[id="currency"],
+.inputContainer input[id="type-money-validation-true-placeholder-true"] ~ span[id="currency"] {
+    border-right: 1px solid var(--success, #25b022) !important;
+    border-top: 1px solid var(--success, #25b022) !important;
+    border-bottom: 1px solid var(--success, #25b022) !important;
+
+}
+.inputContainer input[id="type-money-validation-false-placeholder-false"] ~ span[id="currency"],
+.inputContainer input[id="type-money-validation-false-placeholder-true"] ~ span[id="currency"] {
+    border-right: 1px solid var(--error, #c62b34) !important;
+    border-top: 1px solid var(--error, #c62b34) !important;
+    border-bottom: 1px solid var(--error, #c62b34) !important;
+    border-left: none !important;
+}
+
+
+div[id="type-money-validation-true-placeholder-true"] ~ label[for="input"],
+div[id="type-money-validation-false-placeholder-true"] ~ label[for="input"],
+div[id="type-money-validation-none-placeholder-true"] ~ label[for="input"]{
+    font-size: 10px !important;
+    color: var(--grey-4, #4e4e5b) !important;
+    font-family: Roboto, sans-serif;
+    padding-top: 7px;
+}
+div[id="type-money-validation-true-placeholder-true"] > .inputContainer,
+div[id="type-money-validation-false-placeholder-true"] > .inputContainer,
+div[id="type-money-validation-none-placeholder-true"] > .inputContainer,
+div[id="type-money-validation-true-placeholder-false"] > .inputContainer,
+div[id="type-money-validation-false-placeholder-false"] > .inputContainer,
+div[id="type-money-validation-none-placeholder-false"] > .inputContainer{
+   display: flex !important;
+}
+input[id="type-primary-validation-true-placeholder-true"]:focus,
+input[id="type-primary-validation-false-placeholder-true"]:focus,
+input[id="type-primary-validation-none-placeholder-true"]:focus,
+input[id="type-primary-validation-true-placeholder-false"]:focus,
+input[id="type-primary-validation-false-placeholder-false"]:focus,
+input[id="type-primary-validation-none-placeholder-false"]:focus {
+    box-shadow: none !important;
+    border: 1px solid var(--primary-20, #09179a) !important;
+    background-color: #FFFFFF !important;
+}
+
+input[id="type-money-validation-true-placeholder-true"]:focus,
+input[id="type-money-validation-false-placeholder-true"]:focus,
+input[id="type-money-validation-none-placeholder-true"]:focus,
+input[id="type-money-validation-true-placeholder-false"]:focus,
+input[id="type-money-validation-false-placeholder-false"]:focus,
+input[id="type-money-validation-none-placeholder-false"]:focus
+{
+    box-shadow: none !important;
+    border: 1px solid var(--primary-20, #09179a) !important;
+    background-color: #FFFFFF !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-right: none !important;
+}
+
+input[id="type-money-validation-none-placeholder-false"]:focus ~ span[id="currency"],
+input[id="type-money-validation-none-placeholder-true"]:focus ~ span[id="currency"],
+input[id="type-money-validation-true-placeholder-false"]:focus ~ span[id="currency"],
+input[id="type-money-validation-true-placeholder-true"]:focus ~ span[id="currency"],
+input[id="type-money-validation-false-placeholder-false"]:focus ~ span[id="currency"],
+input[id="type-money-validation-false-placeholder-true"]:focus ~ span[id="currency"]{
+    background-color: white !important;
+    border-right: 1px solid var(--primary-20, #09179a) !important;
+    border-top: 1px solid var(--primary-20, #09179a) !important;
+    border-bottom: 1px solid var(--primary-20, #09179a) !important;
+}
+

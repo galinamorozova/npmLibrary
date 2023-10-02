@@ -1,0 +1,1 @@
+export {TabComponent, type TabComponentProps} from "./TabComponent"

@@ -1,0 +1,33 @@
+.SideMenu {
+    font-family: Roboto, sans-serif;
+    color: var(--grey-3, #808089);
+    text-align: left;
+    font-size: 12px;
+}
+
+.menuItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+.menuItem:hover {
+    color: var(--grey-4, #4E4E5B);
+}
+
+.message {
+    padding: 1px 4px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+}
+
+.emptyDecoration {
+    width: 16px;
+}

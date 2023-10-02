@@ -1,0 +1,28 @@
+.type-pills, .type-underline{
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    color: var(--grey-4, #4E4E5B);
+    text-align: left;
+    width: 100%;
+}
+
+.type-pills button {
+    border: none !important;
+    border-radius: 4px !important;
+    font-family: Roboto, sans-serif !important;
+    font-size: 12px !important;
+    color: var(--grey-4, #4E4E5B) !important;
+    padding: 4px 14px!important;
+}
+.type-underline button {
+    border: none !important;
+    border-radius: 4px !important;
+    font-family: Roboto, sans-serif !important;
+    font-size: 12px !important;
+    color: var(--grey-4, #4E4E5B) !important;
+    padding: 4px 14px!important;
+}
+.type-underline button:focus {
+    border-bottom: 2px solid var(--primary-20, #1B3F7F) !important;
+    border-radius: 0 !important;
+}

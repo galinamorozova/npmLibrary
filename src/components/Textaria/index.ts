@@ -1,0 +1,1 @@
+export {Textaria, type TextariaProps} from "./Textaria"

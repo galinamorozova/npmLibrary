@@ -1,0 +1,35 @@
+@import "../styleguide.css";
+
+.type-b-w,
+.type-b-w * {
+  box-sizing: border-box;
+}
+
+.type-b-w {
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  display: inline-flex;
+  text-decoration: none;
+}
+
+
+.tab {
+  opacity: 0.8999999761581421;
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+
+.text {
+  color: var(--Grey-4, #4E4E5B);
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.99px;
+  text-transform: uppercase;
+}

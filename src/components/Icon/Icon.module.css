@@ -1,0 +1,54 @@
+@import "../styleguide.css";
+
+
+.icon-black-file-text,
+.icon-black-file-text * {
+  box-sizing: border-box;
+}
+.icon-black-file-text {
+  position: relative;
+  overflow: visible;
+}
+.icon-black-attachment,
+.icon-black-attachment * {
+  box-sizing: border-box;
+}
+.icon-black-attachment {
+  position: relative;
+  overflow: visible;
+}
+.icon-black-plus,
+.icon-black-plus * {
+  box-sizing: border-box;
+}
+.icon-black-plus {
+  position: relative;
+  overflow: visible;
+}
+.icon-white-plus,
+.icon-white-plus * {
+  box-sizing: border-box;
+}
+.icon-white-plus {
+  position: relative;
+  overflow: visible;
+}
+
+.icon-black-delete-2,
+.icon-black-delete-2 * {
+  box-sizing: border-box;
+}
+.icon-black-delete-2 {
+  position: relative;
+  overflow: visible;
+}
+
+.icon-white-delete-2,
+.icon-white-delete-2 * {
+  box-sizing: border-box;
+}
+.icon-white-delete-2 {
+  position: relative;
+  overflow: visible;
+}
+

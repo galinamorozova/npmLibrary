@@ -1,0 +1,25 @@
+.Textaria {
+    color: var(--grey-4, #4E4E5B);
+}
+
+.label > label {
+    opacity: 0;
+}
+
+.title {
+    text-align: left;
+    font-size: 10px;
+    color: var(--grey-4, #4E4E5B);
+    font-family: Roboto, serif;
+    margin-bottom: 5px;
+}
+
+.textBlock {
+    font-family: Roboto, serif;
+    color: #4E4E5B;
+    font-size: 12px;
+    padding: 8px !important;
+    box-shadow: none !important;
+    border-radius: 4px;
+    border-color: var(--grey-2, #c6c7d3);
+}

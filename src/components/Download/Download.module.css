@@ -1,0 +1,34 @@
+.Download {
+width: 100%;
+}
+.downloadContainer {
+    width: 100%;
+}
+.validation-true, .validation-none, .validation-false {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px;
+    border: 1px dashed var(--grey-2, #C6C7D3);
+    border-radius: 4px;
+    color: var(--grey-3, #808089);
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+}
+.validation-false {
+    border: 1px solid var(--error, #c62b34);
+    color: var(--error, #c62b34);
+}
+.uploadFile {
+    display: none;
+}
+.clipIcon {
+    margin-left: 10px;
+}
+.title {
+    color: var(--grey-3, #808089);
+    font-family: Roboto, sans-serif;
+    font-size: 10px;
+    text-align: left;
+    margin-bottom: 5px;
+}

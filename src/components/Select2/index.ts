@@ -1,0 +1,1 @@
+export {Select2, type Select2Props} from "./Select2"

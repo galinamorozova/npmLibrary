@@ -1,0 +1,6 @@
+.TreeView {
+    font-family: Roboto, sans-serif;
+    color: var(--grey-4, #4E4E5B);
+    text-align: left;
+    font-size: 14px;
+}
