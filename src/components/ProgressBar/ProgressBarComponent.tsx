@@ -21,11 +21,11 @@ export const ProgressBarComponent = ({
         <div className={styles.ProgressBarComponent} data-testid="ProgressBarComponent">
             <ProgressBar
                 now={now}
-                label={`${now}%`}
-                visuallyHidden={visuallyHidden}
-                style={{height: height, width: width}}
-                variant="custom"
                 className={styles.custom}
+                label={`${now}%`}
+                visuallyHidden={visuallyHidden ? visuallyHidden : true}
+                style={{height: height ? height : "3px", width: width ? width : "100%"}}
+                variant="custom"
             />
         </div>
     );
@@ -37,7 +37,7 @@ export default ProgressBarComponent;
 ProgressBarComponent.defaultProps = {
     height: "3px",
     width: "100%",
-    now: 0,
+    now: 10,
     visuallyHidden: true,
 };
 ProgressBarComponent.propTypes = {

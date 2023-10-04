@@ -17,4 +17,4 @@ export * from './Download';
 export * from './Icon';
 export * from './Divider';
 export * from './ButtonM';
-export * from './ProgressBar'
+export * from './ProgressBar';
