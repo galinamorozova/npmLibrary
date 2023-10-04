@@ -8,29 +8,27 @@ import shield from "../../images/shield.svg";
 import comment from "../../images/commentIcon.svg";
 import top from "../../images/top.svg";
 import down from "../../images/down.svg";
-import topLight from "../../images/topLight.svg";
-import downLight from "../../images/downLight.svg";
 import PropTypes from "prop-types";
 
 
-interface OptionType {
+export interface SideMenuOptionType {
     id: string,
     name: string,
     icon?: "folder" | "shield" | "tape" | "comment" | "schedule",
     number?: number,
-    children?: DataChildrenType[],
+    children?: SideMenuDataChildrenType[],
 }
 
-interface DataChildrenType {
+export interface SideMenuDataChildrenType {
     id: string,
     name: string,
     icon?: "folder" | "shield" | "tape" | "comment" | "schedule",
     number?: number,
-    children?: DataChildrenType[],
+    children?: SideMenuDataChildrenType[],
     onClick: ()=> void
 }
 
-const dataOption: OptionType[] = [
+const dataOption: SideMenuOptionType[] = [
     {
         id: "1",
         name: "График судов",
@@ -66,7 +64,7 @@ const dataOption: OptionType[] = [
 
 export interface SideMenuProps {
     openByDefault: boolean,
-    data: OptionType[]
+    data: SideMenuOptionType[]
 }
 
 export const SideMenu = ({
@@ -81,9 +79,9 @@ export const SideMenu = ({
             <div style={style} ref={dragHandle} onClick={() => node.toggle()}>
                 <div>
                     {!node.isLeaf &&
-                        <div className={styles.menuItem} style={{backgroundColor: node.data.icon ? "#F8F8F8" : "",
-                        margin: node.data.icon ? "0px 0" : ""}}
-                        onClick={node.data.onClick}>
+                        <div className={styles.menuItem} style={{backgroundColor: node.data.icon ? "#255486" : "",
+                            margin: node.data.icon ? "0px 0" : ""}}
+                             onClick={node.data.onClick}>
                             <div className={styles.iconContainer}>
                                 {(node.data.icon && node.data.icon === "folder") && <img src={folder} alt=""/>}
                                 {(node.data.icon && node.data.icon === "schedule") && <img src={schedule} alt=""/>}
@@ -91,20 +89,20 @@ export const SideMenu = ({
                                 {(node.data.icon && node.data.icon === "shield") && <img src={shield} alt=""/>}
                                 {(node.data.icon && node.data.icon === "comment") && <img src={comment} alt=""/>}
                                 <span style={{marginLeft: node.data.icon ? "8px" : "",
-                                    fontSize: node.data.icon ? "14px" : "12px", color: node.data.icon ? "#4E4E5B" : "#808089"}}>
+                                    marginTop: !node.data.icon ? "10px" : "0px",
+                                    marginBottom: !node.data.icon ? "10px" : "0px",
+                                    fontSize: node.data.icon ? "14px" : "12px"}}>
                                     {node.data.name}</span>
                             </div>
                             <div>
                                 {
                                     node.data.number &&
-                                    <span className={styles.message} style={{backgroundColor: node.data.icon ? "white" : "#F8F8F8"}}>
+                                    <span className={styles.message} style={{backgroundColor: node.data.icon ? "#1B3F7F" : "#163964"}}>
                                         {node.data.number}
                                     </span>
                                 }
-                                {(!node.isOpen && node.data.icon) && <img src={down} alt=""/>}
-                                {(node.isOpen && node.data.icon) && <img src={top} alt=""/>}
-                                {(!node.isOpen && !node.data.icon) && <img src={downLight} alt=""/>}
-                                {(node.isOpen && !node.data.icon) && <img src={topLight} alt=""/>}
+                                {(!node.isOpen) && <img src={down} alt=""/>}
+                                {(node.isOpen) && <img src={top} alt=""/>}
                             </div>
                         </div>
                     }
@@ -114,7 +112,7 @@ export const SideMenu = ({
                             <span>&mdash; {node.data.name}</span>
                             <div className={styles.iconContainer}>
                                 {node.data.number &&
-                                    <span className={styles.message} style={{backgroundColor: node.data.icon ? "white" : "#F8F8F8"}}>
+                                    <span className={styles.message} style={{backgroundColor: node.data.icon ? "#1B3F7F" : "#163964"}}>
                                         {node.data.number}</span>
                                 }
                                 <div className={styles.emptyDecoration}></div>

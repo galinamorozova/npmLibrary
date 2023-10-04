@@ -8,12 +8,12 @@ import folderIcon from "../../images/closedFolderIcon.svg";
 import closeFolderIcon from "../../images/openedFolderIcon.svg";
 
 
-interface OptionType {
+export interface OptionType {
     id: string,
     name: string,
     children?: DataChildrenType[],
 }
-interface DataChildrenType {
+export interface DataChildrenType {
     id: string,
     name: string,
     type?: string,

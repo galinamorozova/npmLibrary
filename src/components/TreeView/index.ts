@@ -1,1 +1,1 @@
-export {TreeView, type TreeViewProps} from "./TreeView"
+export {TreeView, type TreeViewProps, type OptionType, type DataChildrenType} from "./TreeView"

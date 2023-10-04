@@ -14,6 +14,9 @@
     color: var(--grey-4, #4E4E5B) !important;
     padding: 4px 14px!important;
 }
+.type-pills button:active, .type-pills button:hover, .type-pills button:focus {
+    background-color: #3EAB4A!important;
+}
 .type-underline button {
     border: none !important;
     border-radius: 4px !important;

@@ -11,3 +11,59 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: Roboto;
+  src: local(Roboto),
+  url(/public/fonts/RobotoFlex.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: local(Roboto),
+  url(/public/fonts/RobotoFlex.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+/* Figma Styles of your File */
+:root {
+  /* Colors */
+  --error: #c62b34;
+  --success: #25b022;
+  --white: #ffffff;
+  --grey-1: #eaecf6;
+  --grey-2: #c6c7d3;
+  --grey-3: #808089;
+  --grey-4: #4e4e5b;
+  --grey-5: #F3F6F9;
+  --primary-95: #f0efff;
+  --primary-80: #bcc2ff;
+  --primary-60: #7985fe;
+  --primary-primary-40: #4551c8;
+  --primary-20: #09179a;
+  --secondary-1: #7F1B75;
+  --secondary-2: #d25ab2;
+
+  /* Fonts */
+  --headline-large: 600 28px/120% "Roboto", sans-serif;
+  --headline-medium: 600 24px/120% "Roboto", sans-serif;
+  --title-large: 600 20px/120% "Roboto", sans-serif;
+  --title-medium: 600 18px/120% "Roboto", sans-serif;
+  --body-large: 400 18px/120% "Roboto", sans-serif;
+  --body-medium: 400 16px/120% "Roboto", sans-serif;
+  --body-small: 400 14px/120% "Roboto", sans-serif;
+  --button: 600 11px/140% "Roboto", sans-serif;
+  --label-large: 400 14px/120% "Roboto", sans-serif;
+  --label-medium: 400 12px/120% "Roboto", sans-serif;
+
+  /* Effects */
+  --drop-box-shadow: 4px 4px 12px 0px rgba(118, 118, 118, 0.12);
+}
+
+
+
+

@@ -1,1 +1,1 @@
-export {SideMenu, type SideMenuProps} from "./SideMenu"
+export {SideMenu, type SideMenuOptionType, type SideMenuProps, type SideMenuDataChildrenType} from "./SideMenu";

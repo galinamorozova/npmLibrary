@@ -1,12 +1,12 @@
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
-import css from "rollup-plugin-import-css";
 import url from '@rollup/plugin-url';
 import svgr from '@svgr/rollup';
 import nodeResolve from '@rollup/plugin-node-resolve';
 import terser from '@rollup/plugin-terser';
 import { dts } from "rollup-plugin-dts";
-const packageJson = require('./package.json');
+import postcss from 'rollup-plugin-postcss'
+// const packageJson = require('./package.json');
 
 
 module.exports = [
@@ -22,17 +22,18 @@ module.exports = [
             format: 'esm'
         },
     ],
-    external: ['react', 'react-bootstrap'],
+    external: ['react'],
     plugins: [
         commonjs(),
         nodeResolve(),
         typescript({
-            tsconfig: "./tsconfig.json"
+            tsconfig: "./tsconfig.json",
+            exclude: ['**/*.stories.tsx']
         }),
-        css({
+        postcss({
             extract: 'index.css',
             modules: true,
-            minify: true
+            minimize: true
         }),
         url(),
         svgr({
@@ -44,7 +45,8 @@ module.exports = [
     {
         input: 'dist/esm/types/index.d.ts',
         output: [{ file: 'dist/index.d.ts', format: "esm" }],
-        external: [/\.css$/],
+        external: [/\.(css|scss)$/],
+        extensions: ['.css'],
         plugins: [dts()],
     }
 ]

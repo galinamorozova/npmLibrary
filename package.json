@@ -3,8 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/galinamorozova"
   },
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
   "main": "dist/esm/index.js",
   "module": "dist/cjs/index.js",
   "files": [
@@ -95,6 +94,7 @@
     "rollup-plugin-dts": "^6.0.2",
     "rollup-plugin-import-css": "^3.3.4",
     "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-postcss-modules": "^2.1.1",
     "storybook": "^7.3.2",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",

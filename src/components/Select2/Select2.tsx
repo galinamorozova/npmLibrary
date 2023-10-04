@@ -7,14 +7,14 @@ import PropTypes from "prop-types";
 export interface Select2Props {
     title: string,
     multiType: true | false,
-    options: OptionType[],
+    options: SelectOptionType[],
 }
 
-interface OptionType {
+export interface SelectOptionType {
     value: string;
     label: string;
 };
-const StateOption: OptionType[] = [
+const SelectStateOption: SelectOptionType[] = [
     {value: 'Option1', label: 'Option1'},
     {value: 'Option2', label: 'Option2'},
     {value: 'Option3', label: 'Option3'},
@@ -118,7 +118,7 @@ export default Select2;
 Select2.defaultProps = {
     title: "",
     multiType: true,
-    options: StateOption
+    options: SelectStateOption
 };
 
 Select2.propTypes = {

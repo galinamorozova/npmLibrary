@@ -1,1 +1,1 @@
-export {TabComponent, type TabComponentProps} from "./TabComponent"
+export {TabComponent, type TabComponentProps, type TabOptionType} from "./TabComponent"
