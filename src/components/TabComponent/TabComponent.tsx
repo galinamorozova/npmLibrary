@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styles from './TabComponent.module.css';
-import {Nav, Tab, Tabs} from "react-bootstrap";
+import {Tab, Tabs} from "react-bootstrap";
 import PropTypes, {string} from "prop-types";
 
 export interface TabComponentProps {
