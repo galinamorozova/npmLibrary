@@ -45,7 +45,7 @@ export const ButtonL = ({
 
 export default ButtonL;
 
-ButtonM.defaultProps = {
+ButtonL.defaultProps = {
   type: "primary",
   hover: "off",
   iconType: "none",
@@ -53,7 +53,7 @@ ButtonM.defaultProps = {
   width: "fit-content"
 };
 
-ButtonM.propTypes = {
+ButtonL.propTypes = {
   type: PropTypes.oneOf(["primary", "outline", "disabled"]),
   hover: PropTypes.oneOf(["on", "off"]),
   iconType: PropTypes.oneOf(["r", "none", "l", "rl"]),
