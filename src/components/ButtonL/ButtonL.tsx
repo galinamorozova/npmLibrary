@@ -4,7 +4,7 @@ import Icon from '../Icon/Icon';
 import PropTypes from "prop-types";
 import Button from "react-bootstrap/Button";
 
-import styles from './ButtonM.module.css';
+import styles from './ButtonL.module.css';
 
 export interface ButtonMProps {
   type: "primary" | "outline" | "disabled" | "secondary";
@@ -16,7 +16,7 @@ export interface ButtonMProps {
   onClick?: ()=> void;
 }
 
-export const ButtonM = ({
+export const ButtonL = ({
                           type,
                           hover,
                           iconType,
@@ -43,7 +43,7 @@ export const ButtonM = ({
   );
 };
 
-export default ButtonM;
+export default ButtonL;
 
 ButtonM.defaultProps = {
   type: "primary",
