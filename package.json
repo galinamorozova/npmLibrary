@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://10.0.2.55:4873"
   },
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "dist/esm/index.js",
   "module": "dist/cjs/index.js",
   "files": [
