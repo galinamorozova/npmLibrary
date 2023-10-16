@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 
 import styles from './ButtonL.module.css';
 
-export interface ButtonMProps {
+export interface ButtonLProps {
   type: "primary" | "outline" | "disabled" | "secondary";
   hover: "on" | "off";
   iconType: "r" | "none" | "l" | "rl";
@@ -25,7 +25,7 @@ export const ButtonL = ({
                           onClick,
                           width,
                           ...props
-                        }: ButtonMProps): JSX.Element => {
+                        }: ButtonLProps): JSX.Element => {
   const scn = ("type-" + type + "-hover-" + hover + "-icon-" + iconType);
   return (
       <div className={styles['button-atom-l']} style={{width: width}}>

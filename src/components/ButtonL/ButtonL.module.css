@@ -21,18 +21,18 @@ button:defined {
   box-sizing: border-box;
 }
 
- 
+
 .button-atom-l,
 .button-atom-l * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display:inline-flex;
-} 
+}
 
 .include-text-primary {
   color: var(--white, #ffffff);
   text-align: left;
-  font: var(--button, 600 11px/140% "Roboto", sans-serif);
+  font: var(--button, 600 11px/140% "Inter", sans-serif);
   text-transform: uppercase;
   position: relative;
   display: flex;
@@ -43,7 +43,7 @@ button:defined {
 .include-text-secondary {
   color: var(--white, #ffffff);
   text-align: left;
-  font: var(--button, 600 11px/140% "Roboto", sans-serif);
+  font: var(--button, 600 11px/140% "Inter", sans-serif);
   text-transform: uppercase;
   position: relative;
   display: flex;
@@ -54,18 +54,18 @@ button:defined {
 .include-text-outline{
   color: var(--grey-4, #4e4e5b);
   text-align: left;
-  font: var(--button, 600 11px/140% "Roboto", sans-serif);
+  font: var(--button, 600 11px/140% "Inter", sans-serif);
   text-transform: uppercase;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   letter-spacing: 0.99px;
-} 
+}
 .include-text-disabled{
   color: var(--grey-3, #808089);
   text-align: left;
-  font: var(--button, 600 11px/140% "Roboto", sans-serif);
+  font: var(--button, 600 11px/140% "Inter", sans-serif);
   text-transform: uppercase;
   position: relative;
   display: flex;
@@ -210,8 +210,8 @@ button:defined {
   overflow: hidden;
 }
 .button-atom-l .type-secondary-hover-off-icon-none {
-  background: var(--secondary-1, #7F1B75);
-  border: 1px solid var(--secondary-1, #7F1B75);
+  background: var(--success, #25b022);
+  border: 1px solid var(--success, #25b022);
   border-radius: 4px;
   padding: 20px 32px 20px 32px;
   display: flex;
@@ -225,8 +225,8 @@ button:defined {
   overflow: hidden;
 }
 .button-atom-l .type-secondary-hover-on-icon-none {
-  background: var(--secondary-2, #d25ab2);
-  border: 1px solid var(--secondary-2, #d25ab2);
+  background: var(--success-2, #73dc70);
+  border: 1px solid var(--success-2, #73dc70);
   border-radius: 4px;
   padding: 20px 32px 20px 32px;
   display: flex;
@@ -240,8 +240,8 @@ button:defined {
   overflow: hidden;
 }
 .button-atom-l .type-secondary-hover-off-icon-none:hover {
-  background:  var(--secondary-2, #d25ab2);
-  border: 1px solid var(--secondary-2, #d25ab2);
+  background:  var(--success-2, #73dc70);
+  border: 1px solid var(--success-2, #73dc70);
   border-radius: 4px;
   padding: 20px 32px 20px 32px;
   display: flex;
@@ -255,8 +255,8 @@ button:defined {
   overflow: hidden;
 }
 .button-atom-l .type-secondary-hover-off-icon-r {
-  background: var(--secondary-1, #7F1B75);
-  border: 1px solid var(--secondary-1, #7F1B75);
+  background: var(--success, #25b022);
+  border: 1px solid var(--success, #25b022);
   border-radius: 4px;
   padding: 20px 32px 20px 32px;
   display: flex;
@@ -270,8 +270,8 @@ button:defined {
   overflow: hidden;
 }
 .button-atom-l .type-secondary-hover-on-icon-r {
-  background: var(--secondary-2, #d25ab2);
-  border: 1px solid var(--secondary-2, #d25ab2);
+  background: var(--success-2, #73dc70);
+  border: 1px solid var(--success-2, #73dc70);
   border-radius: 4px;
   padding: 20px 32px 20px 32px;
   display: flex;
@@ -285,8 +285,8 @@ button:defined {
   overflow: hidden;
 }
 .button-atom-l .type-secondary-hover-off-icon-r:hover {
-  background: var(--secondary-2, #d25ab2);
-  border: 1px solid var(--secondary-2, #d25ab2);
+  background: var(--success-2, #73dc70);
+  border: 1px solid var(--success-2, #73dc70);
   border-radius: 4px;
   padding: 20px 32px 20px 32px;
   display: flex;
@@ -300,8 +300,8 @@ button:defined {
   overflow: hidden;
 }
 .button-atom-l .type-secondary-hover-off-icon-l {
-  background: var(--secondary-1, #7F1B75);
-  border: 1px solid var(--secondary-1, #7F1B75);
+  background: var(--success, #25b022);
+  border: 1px solid var(--success, #25b022);
   border-radius: 4px;
   padding: 20px 32px 20px 32px;
   display: flex;
@@ -315,8 +315,8 @@ button:defined {
   overflow: hidden;
 }
 .button-atom-l .type-secondary-hover-on-icon-l {
-  background: var(--secondary-2, #d25ab2);
-  border: 1px solid var(--secondary-2, #d25ab2);
+  background: var(--success-2, #73dc70);
+  border: 1px solid var(--success-2, #73dc70);
   border-radius: 4px;
   padding: 20px 32px 20px 32px;
   display: flex;
@@ -330,8 +330,8 @@ button:defined {
   overflow: hidden;
 }
 .button-atom-l .type-secondary-hover-off-icon-l:hover {
-  background: var(--secondary-2, #d25ab2);
-  border: 1px solid var(--secondary-2, #d25ab2);
+  background: var(--success-2, #73dc70);
+  border: 1px solid var(--success-2, #73dc70);
   border-radius: 4px;
   padding: 20px 32px 20px 32px;
   display: flex;
@@ -623,15 +623,4 @@ button:defined {
   overflow: hidden;
   cursor: auto !important;
 }
-
-
-
-
-
-
-
-
-
-
-
 
