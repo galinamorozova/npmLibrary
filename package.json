@@ -1,9 +1,9 @@
 {
-  "name": "@galinamorozova/npm-library",
+  "name": "@ispolcom/npm-library",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/galinamorozova"
+    "registry": "https://10.0.2.55:4873"
   },
-  "version": "0.1.5",
+  "version": "0.1.4",
   "main": "dist/esm/index.js",
   "module": "dist/cjs/index.js",
   "files": [
