@@ -1,12 +1,14 @@
 .title {
     position: absolute;
-    top: -2px;
-    left: 5%;
+    top: 0;
+    left: 12px;
     z-index:5;
-    font-size: 10px
+    font-size: 10px;
+    color: var(--grey-3, #808089)
 }
 
 .selectWrapper{
     position: relative;
 }
+
 

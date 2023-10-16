@@ -1,6 +1,11 @@
 
+@import "../styleguide.css";
 
 body {
+  margin: 0;
+  padding: 0;
+}
+span {
   margin: 0;
   padding: 0;
 }
@@ -22,579 +27,570 @@ button:defined {
   box-sizing: border-box;
 }
 
- 
+
 .button-atom-l,
 .button-atom-l * {
-  display: flex;
-  flex-direction: row;
-  gap: 0px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: relative;
-} 
-
-.include-text-primary{
-  color: var(--White, #FFF);
-  font-family: Roboto;
-  font-size: 11px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 140%;
-  letter-spacing: 0.99px;
-  text-transform: uppercase;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display:inline-flex;
+  font-size: 10px;
 }
-.include-text-secondary{
-  color: var(--White, #FFF);
-  font-family: Roboto;
-  font-size: 11px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 140%;
-  letter-spacing: 0.99px;
+
+.include-text-primary {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font: var(--button, 500 10px/140% "Inter", sans-serif);
+  letter-spacing: 0.4px;
   text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.include-text-secondary {
+  color: var(--white, #ffffff);
+  text-align: left;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  letter-spacing: 0.4px;
 }
 .include-text-outline{
-  color: var(--Grey-4, #4E4E5B);
-  font-family: Roboto;
-  font-size: 11px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 140%;
-  letter-spacing: 0.99px;
+  color: var(--grey-4, #4e4e5b);
+  text-align: left;
   text-transform: uppercase;
-} 
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  letter-spacing: 0.4px;
+}
 .include-text-disabled{
-  color: var(--Grey-3, #808089);
-  font-family: Roboto;
-  font-size: 11px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 140%; 
-  letter-spacing: 0.99px;
+  color: var(--grey-3, #808089);
+  text-align: left;
+  font: var(--button, 500 10px/140% "Inter", sans-serif);
   text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  letter-spacing: 0.4px;
 }
 
 .button-atom-l .type-primary-hover-off-icon-none {
-  background: var(--primary-primary-40, #4551c8);
+  background: var(--primary-40, #4551c8);
+  border: 1px solid var(--primary-40, #4551c8);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
 .button-atom-l .type-primary-hover-on-icon-none {
   background: var(--primary-60, #7985fe);
+  border: 1px solid var(--primary-60, #7985fe);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
 .button-atom-l .type-primary-hover-off-icon-none:hover {
   background: var(--primary-60, #7985fe);
+  border: 1px solid var(--primary-60, #7985fe);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
-.button-atom-l .type-primary-hover-off-icon-r {
-  background: var(--primary-primary-40, #4551c8);
+.button-atom-l .type-primary-hover-off-icon-r, .button-atom-l .type-primary-hover-off-icon-rl {
+  background: var(--primary-40, #4551c8);
+  border: 1px solid var(--primary-40, #4551c8);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
-.button-atom-l .type-primary-hover-on-icon-r {
+.button-atom-l .type-primary-hover-on-icon-r, .button-atom-l .type-primary-hover-on-icon-rl {
   background: var(--primary-60, #7985fe);
+  border: 1px solid var(--primary-60, #7985fe);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
-.button-atom-l .type-primary-hover-off-icon-r:hover {
+.button-atom-l .type-primary-hover-off-icon-r:hover, .button-atom-l .type-primary-hover-off-icon-rl:hover {
   background: var(--primary-60, #7985fe);
+  border: 1px solid var(--primary-60, #7985fe);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
 .button-atom-l .type-primary-hover-off-icon-l {
-  background: var(--primary-primary-40, #4551c8);
+  background: var(--primary-40, #4551c8);
+  border: 1px solid var(--primary-40, #4551c8);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
 .button-atom-l .type-primary-hover-on-icon-l {
   background: var(--primary-60, #7985fe);
+  border: 1px solid var(--primary-60, #7985fe);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
 .button-atom-l .type-primary-hover-off-icon-l:hover {
   background: var(--primary-60, #7985fe);
+  border: 1px solid var(--primary-60, #7985fe);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
 .button-atom-l .type-secondary-hover-off-icon-none {
-  background: var(--secondary-1, #7F1B75);
+  background: var(--success, #25b022);
+  border: 1px solid var(--success, #25b022);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
 .button-atom-l .type-secondary-hover-on-icon-none {
-  background: var(--secondary-2, #d25ab2);
+  background: var(--success-2, #73dc70);
+  border: 1px solid var(--success-2, #73dc70);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
 .button-atom-l .type-secondary-hover-off-icon-none:hover {
-  background: var(--secondary-2, #d25ab2);
+  background:  var(--success-2, #73dc70);
+  border: 1px solid var(--success-2, #73dc70);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
 .button-atom-l .type-secondary-hover-off-icon-r {
-  background: var(--secondary-1, #7F1B75);
+  background: var(--success, #25b022);
+  border: 1px solid var(--success, #25b022);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
 .button-atom-l .type-secondary-hover-on-icon-r {
-  background: var(--secondary-2, #d25ab2);
+  background: var(--success-2, #73dc70);
+  border: 1px solid var(--success-2, #73dc70);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
 .button-atom-l .type-secondary-hover-off-icon-r:hover {
-  background: var(--secondary-2, #d25ab2);
+  background: var(--success-2, #73dc70);
+  border: 1px solid var(--success-2, #73dc70);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
 .button-atom-l .type-secondary-hover-off-icon-l {
-  background: var(--secondary-1, #7F1B75);
+  background: var(--success, #25b022);
+  border: 1px solid var(--success, #25b022);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
 .button-atom-l .type-secondary-hover-on-icon-l {
-  background: var(--secondary-2, #d25ab2);
+  background: var(--success-2, #73dc70);
+  border: 1px solid var(--success-2, #73dc70);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
 .button-atom-l .type-secondary-hover-off-icon-l:hover {
-  background: var(--secondary-2, #d25ab2);
+  background: var(--success-2, #73dc70);
+  border: 1px solid var(--success-2, #73dc70);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
 .button-atom-l .type-outline-hover-off-icon-none {
   border-radius: 4px;
-  border-style: solid;
-  border-color: var(--grey-2, #c6c7d3);
-  border-width: 1px;
-  padding: 12px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--grey-2, #c6c7d3);
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
 .button-atom-l .type-outline-hover-on-icon-none {
   border-radius: 4px;
-  border-style: solid;
-  border-color: var(--grey-1, #eaecf6);
-  border-width: 1px;
-  padding: 12px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--grey-1, #eaecf6);
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
 .button-atom-l .type-outline-hover-off-icon-none:hover {
   border-radius: 4px;
-  border-style: solid;
-  border-color: var(--grey-1, #eaecf6);
-  border-width: 1px;
-  padding: 12px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--grey-1, #eaecf6);
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
-.button-atom-l .type-outline-hover-off-icon-r {
+.button-atom-l .type-outline-hover-off-icon-r, .button-atom-l .type-outline-hover-off-icon-rl {
   border-radius: 4px;
-  border-style: solid;
-  border-color: var(--grey-2, #c6c7d3);
-  border-width: 1px;
-  padding: 12px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--grey-2, #c6c7d3);
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
-.button-atom-l .type-outline-hover-on-icon-r {
+.button-atom-l .type-outline-hover-on-icon-r, .button-atom-l .type-outline-hover-on-icon-rl {
   border-radius: 4px;
-  border-style: solid;
-  border-color: var(--grey-1, #eaecf6);
-  border-width: 1px;
-  padding: 12px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--grey-1, #eaecf6);
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
-.button-atom-l .type-outline-hover-off-icon-r:hover {
+.button-atom-l .type-outline-hover-off-icon-r:hover, .button-atom-l .type-outline-hover-off-icon-rl:hover {
   border-radius: 4px;
-  border-style: solid;
-  border-color: var(--grey-1, #eaecf6);
-  border-width: 1px;
-  padding: 12px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--grey-1, #eaecf6);
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
 .button-atom-l .type-outline-hover-off-icon-l {
   border-radius: 4px;
-  border-style: solid;
-  border-color: var(--grey-2, #c6c7d3);
-  border-width: 1px;
-  padding: 12px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--grey-2, #c6c7d3);
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
 .button-atom-l .type-outline-hover-on-icon-l {
   border-radius: 4px;
-  border-style: solid;
-  border-color: var(--grey-1, #eaecf6);
-  border-width: 1px;
-  padding: 12px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--grey-1, #eaecf6);
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
 .button-atom-l .type-outline-hover-off-icon-l:hover {
   border-radius: 4px;
-  border-style: solid;
-  border-color: var(--grey-1, #eaecf6);
-  border-width: 1px;
-  padding: 12px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--grey-1, #eaecf6);
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
 }
 .button-atom-l .type-disabled-hover-off-icon-none {
-  background: #eaecf6;
+  background: var(--grey-1, #eaecf6);
+  border: 1px solid var(--grey-1, #eaecf6);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
+  cursor: auto !important;
 }
 .button-atom-l .type-disabled-hover-on-icon-none {
-  background: #eaecf6;
+  background: var(--grey-1, #eaecf6);
+  border: 1px solid var(--grey-1, #eaecf6);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
+  cursor: auto !important;
 }
 .button-atom-l .type-disabled-hover-off-icon-none:hover {
-  background: #eaecf6;
+  background: var(--grey-1, #eaecf6);
+  border: 1px solid var(--grey-1, #eaecf6);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
+  cursor: auto !important;
 }
-.button-atom-l .type-disabled-hover-off-icon-r {
-  background: #eaecf6;
+.button-atom-l .type-disabled-hover-off-icon-r, .button-atom-l .type-disabled-hover-off-icon-rl {
+  background: var(--grey-1, #eaecf6);
+  border: 1px solid var(--grey-1, #eaecf6);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
+  cursor: auto !important;
 }
-.button-atom-l .type-disabled-hover-on-icon-r {
-  background: #eaecf6;
+.button-atom-l .type-disabled-hover-on-icon-r, .button-atom-l .type-disabled-hover-on-icon-rl {
+  background: var(--grey-1, #eaecf6);
+  border: 1px solid var(--grey-1, #eaecf6);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
+  cursor: auto !important;
 }
-.button-atom-l .type-disabled-hover-off-icon-r:hover {
-  background: #eaecf6;
+.button-atom-l .type-disabled-hover-off-icon-r:hover, .button-atom-l .type-disabled-hover-off-icon-rl:hover {
+  background: var(--grey-1, #eaecf6);
+  border: 1px solid var(--grey-1, #eaecf6);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
+  cursor: auto !important;
 }
 .button-atom-l .type-disabled-hover-off-icon-l {
-  background: #eaecf6;
+  background: var(--grey-1, #eaecf6);
+  border: 1px solid var(--grey-1, #eaecf6);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
+  cursor: auto !important;
 }
 .button-atom-l .type-disabled-hover-on-icon-l {
-  background: #eaecf6;
+  background: var(--grey-1, #eaecf6);
+  border: 1px solid var(--grey-1, #eaecf6);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
+  cursor: auto !important;
 }
 .button-atom-l .type-disabled-hover-off-icon-l:hover {
-  background: #eaecf6;
+  background: var(--grey-1, #eaecf6);
+  border: 1px solid var(--grey-1, #eaecf6);
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 28px;
   position: relative;
   overflow: hidden;
+  cursor: auto !important;
 }
 
 

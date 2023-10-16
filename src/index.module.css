@@ -31,11 +31,39 @@ code {
   font-stretch: normal;
 }
 
+@font-face {
+  font-family: Inter;
+  src: local(Inter),
+  url(/public/fonts/Inter-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: local(Inter),
+  url(/public/fonts/Inter-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: Inter;
+  src: local(Inter),
+  url(/public/fonts/Inter-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+
 /* Figma Styles of your File */
 :root {
   /* Colors */
   --error: #c62b34;
   --success: #25b022;
+  --success-2: #73dc70;
   --white: #ffffff;
   --grey-1: #eaecf6;
   --grey-2: #c6c7d3;
@@ -51,16 +79,16 @@ code {
   --secondary-2: #d25ab2;
 
   /* Fonts */
-  --headline-large: 600 28px/120% "Roboto", sans-serif;
-  --headline-medium: 600 24px/120% "Roboto", sans-serif;
-  --title-large: 600 20px/120% "Roboto", sans-serif;
-  --title-medium: 600 18px/120% "Roboto", sans-serif;
-  --body-large: 400 18px/120% "Roboto", sans-serif;
-  --body-medium: 400 16px/120% "Roboto", sans-serif;
-  --body-small: 400 14px/120% "Roboto", sans-serif;
-  --button: 600 11px/140% "Roboto", sans-serif;
-  --label-large: 400 14px/120% "Roboto", sans-serif;
-  --label-medium: 400 12px/120% "Roboto", sans-serif;
+  --headline-large: 600 28px/120% "Inter", sans-serif;
+  --headline-medium: 600 24px/120% "Inter", sans-serif;
+  --title-large: 600 20px/120% "Inter", sans-serif;
+  --title-medium: 600 18px/120% "Inter", sans-serif;
+  --body-large: 400 18px/120% "Inter", sans-serif;
+  --body-medium: 400 16px/120% "Inter", sans-serif;
+  --body-small: 400 14px/120% "Inter", sans-serif;
+  --button: 500 10px/140% "Inter", sans-serif;
+  --label-large: 400 14px/120% "Inter", sans-serif;
+  --label-medium: 400 12px/120% "Inter", sans-serif;
 
   /* Effects */
   --drop-box-shadow: 4px 4px 12px 0px rgba(118, 118, 118, 0.12);

@@ -1,38 +1,39 @@
 import React from 'react';
-import styles from './Select2.module.css';
+import styles from './OrdinarySelect.module.css';
 import Select, {MultiValue, StylesConfig} from 'react-select';
 import makeAnimated from 'react-select/animated';
 import PropTypes from "prop-types";
 
-export interface Select2Props {
+export interface OrdinarySelectProps {
     title: string,
     multiType: true | false,
-    options: OptionType[],
+    options: OrdinarySelectType[],
     width?: string,
     onChange?: () => void
 }
 
-interface OptionType {
+export interface OrdinarySelectType {
     value: string;
     label: string;
 };
-const StateOption: OptionType[] = [
+const StateOption: OrdinarySelectType[] = [
     {value: 'Option1', label: 'Option1'},
     {value: 'Option2', label: 'Option2'},
     {value: 'Option3', label: 'Option3'},
 ];
 const animatedComponents = makeAnimated();
 
-export const Select2 = ({
-                            title,
-                            multiType,
-                            options,
-                            onChange,
-                            width,
-                            ...props
-                        }: Select2Props): JSX.Element => {
+export const OrdinarySelect = ({
+                                   title,
+                                   multiType,
+                                   options,
+                                   onChange,
+                                   width,
+                                   ...props
+                               }: OrdinarySelectProps): JSX.Element => {
     const colourStyles: StylesConfig = {
-        control: (styles, state) => ({ ...styles,
+        control: (styles, state) => ({
+            ...styles,
             borderColor: state.isFocused ? "#1B3F7F" : "#F3F6F9",
             color: "#4E4E5B",
             ':active': {
@@ -41,8 +42,12 @@ export const Select2 = ({
             ':hover': {borderColor: "#1B3F7F"},
             boxShadow: "none",
             backgroundColor: '#F3F6F9', minWidth: "200px", fontFamily: "Roboto",
-            fontSize: "12px" }),
-        option: (styles, { data, isDisabled, isFocused, isSelected }) => {
+            fontSize: "12px",
+            textAlign: "left",
+            // paddingTop: "5px",
+            // paddingBottom: "-5px"
+        }),
+        option: (styles, {data, isDisabled, isFocused, isSelected}) => {
             return {
                 ...styles,
                 backgroundColor: isDisabled
@@ -85,41 +90,51 @@ export const Select2 = ({
                 },
             };
         },
-        multiValue: (styles, { data }) => {
+        multiValue: (styles, {data}) => {
             return {
                 ...styles,
-                backgroundColor: "white",
+                background: "none",
+                marginLeft: "-3px",
+                marginTop: "10%",
                 borderRadius: "4px",
-                marginTop: "12px"
+                textAlign: "left"
             };
         },
-        multiValueRemove: (styles, { data }) => ({
+        valueContainer: (styles) => {
+            return {
+                ...styles,
+                paddingTop: "7px",
+            };
+        },
+        singleValue: (styles) => {
+            return {
+                ...styles,
+                color: "#4E4E5B",
+            };
+        },
+
+        multiValueRemove: (styles, {data}) => ({
             ...styles,
-            color: "#4E4E5B",
+            color: "#F3F6F9",
             ':hover': {
-                backgroundColor: "white",
+                background: "none",
             },
         }),
-        indicatorSeparator: (styles, { }) => ({
+        indicatorSeparator: (styles, {}) => ({
             ...styles,
             display: "none"
         }),
-        placeholder: (styles, { }) => ({
+        placeholder: (styles, {}) => ({
             ...styles,
             display: "none"
-        }),
-        valueContainer: (styles, { }) => ({
-            ...styles,
-            paddingTop: "8px",
-            paddingBottom: "0"
         }),
 
     };
     return (
-        <div data-testid="Select2"  className={styles.select2} style={{width: width}}>
+        <div data-testid="Select3" className={styles.select3} style={{width: width}}>
             <div className={styles.selectWrapper} style={{width: width}}>
                 <Select
-                    isMulti={multiType}
+                    isMulti={false}
                     components={animatedComponents}
                     closeMenuOnSelect={false}
                     options={options}
@@ -132,21 +147,18 @@ export const Select2 = ({
     );
 };
 
-export default Select2;
+export default OrdinarySelect;
 
-Select2.defaultProps = {
+OrdinarySelect.defaultProps = {
     title: "",
     multiType: true,
     options: StateOption,
     width: "fit-content"
 };
 
-Select2.propTypes = {
+OrdinarySelect.propTypes = {
     title: PropTypes.string,
     width: PropTypes.string,
     multiType: PropTypes.oneOf([true, false]),
     options: PropTypes.array
 };
-
-export class Select2OptionType {
-}

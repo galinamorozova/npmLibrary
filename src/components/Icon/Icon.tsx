@@ -15,7 +15,7 @@ import searchB from "./../../images/icon/black/search.svg";
 import xB from "./../../images/icon/black/x.svg";
 
 type typeIcon = "outline" | "primary" | "disabled" | "secondary";
-type iconName = "plus" | "right" | "left"| "check"| "search"| "x";
+type iconName = "plus" | "right" | "left"| "check"| "search"| "x" | "sliders";
 type themeIcon = "black" | "white";
 
 export interface IconProps {
@@ -51,7 +51,7 @@ Icon.defaultProps = {
 Icon.propTypes = {
   type: PropTypes.oneOf(["outline", "primary", "disabled", "secondary"]),
   theme: PropTypes.oneOf(["black", "white"]),
-  icon: PropTypes.oneOf(["plus", "right", "left", "check", "search", "x"])
+  icon: PropTypes.oneOf(["plus", "right", "left", "check", "search", "x", "sliders"])
 }; 
 
 

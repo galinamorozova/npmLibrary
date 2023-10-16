@@ -1,1 +1,1 @@
-export {Select2, type Select2Props, type SelectOptionType} from "./Select2";
+export {Select2, type Select2Props, type Select2OptionType} from "./Select2";
