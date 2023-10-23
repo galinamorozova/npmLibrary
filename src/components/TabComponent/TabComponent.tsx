@@ -1,29 +1,29 @@
 import React, { FC } from 'react';
 import styles from './TabComponent.module.css';
-import {Tab, Tabs} from "react-bootstrap";
+import {Nav, Tab, Tabs} from "react-bootstrap";
 import PropTypes, {string} from "prop-types";
 
 export interface TabComponentProps {
     type: "pills" | "underline";
-    options: TabOptionType[];
+    options: OptionType[];
 
 }
 
-export type TabOptionType = {
+type OptionType = {
     key: string;
     title: string;
-    content: string
+    content: string;
+    onClick?: ()=>{}
 };
-const StateOption: TabOptionType[] = [
+const StateOption: OptionType[] = [
     {key: 'Option1', title: 'Option1', content: "Content1"},
     {key: 'Option2', title: 'Option2', content: "Content2"},
     {key: 'Option3', title: 'Option3', content: "Content3"},
 ];
 
-export const TabComponent = ({
+const TabComponent = ({
                           type,
                           options,
-
                           ...props
                       }: TabComponentProps): JSX.Element => {
     const scn = ("type-" + type);
@@ -33,11 +33,14 @@ export const TabComponent = ({
                 defaultActiveKey="profile"
                 id="uncontrolled-tab-example"
                 style={{borderRadius: "4px", padding: "2px 2px 3px 2px", border: "none",
-                    backgroundColor:"white"}}
+                    backgroundColor: type === "pills" ? "#F3F6F9" : ""}}
             >
                 {options.map(o => {
                     return(
-                        <Tab eventKey={o.key} title={o.title} style={{backgroundColor: "white"}} className={styles.tab}>
+                        <Tab eventKey={o.key} title={o.title}
+                             style={{backgroundColor: "white"}}
+                             className={styles.tab}
+                             onClick={o.onClick? o.onClick : ()=>{}}>
                             {o.content}
                         </Tab>
                     )

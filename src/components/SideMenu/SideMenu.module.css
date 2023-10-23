@@ -1,19 +1,24 @@
 .SideMenu {
-    font-family: Roboto, sans-serif;
+    font-family: Inter, sans-serif;
     color: white;
     text-align: left;
     font-size: 12px;
 }
 
-.menuItem {
+.menuItem, .menuItemLeaf {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     padding: 6px 8px;
     border-radius: 4px;
+    font-size: 10px;
+    cursor: pointer;
 }
-
+.menuItemLeaf {
+    padding-left: 32px;
+    padding-right: 8px;
+}
 
 .message {
     padding: 1px 4px;

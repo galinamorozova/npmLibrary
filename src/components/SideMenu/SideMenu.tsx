@@ -11,24 +11,25 @@ import down from "../../images/down.svg";
 import PropTypes from "prop-types";
 
 
-export interface SideMenuOptionType {
+interface OptionType {
     id: string,
     name: string,
     icon?: "folder" | "shield" | "tape" | "comment" | "schedule",
     number?: number,
-    children?: SideMenuDataChildrenType[],
+    onClick?: ()=> void,
+    children?: DataChildrenType[],
 }
 
-export interface SideMenuDataChildrenType {
+interface DataChildrenType {
     id: string,
     name: string,
     icon?: "folder" | "shield" | "tape" | "comment" | "schedule",
     number?: number,
-    children?: SideMenuDataChildrenType[],
+    children?: DataChildrenType[],
     onClick: ()=> void
 }
 
-const dataOption: SideMenuOptionType[] = [
+const dataOption: OptionType[] = [
     {
         id: "1",
         name: "График судов",
@@ -62,12 +63,12 @@ const dataOption: SideMenuOptionType[] = [
     },
 ];
 
-export interface SideMenuProps {
+interface SideMenuProps {
     openByDefault: boolean,
-    data: SideMenuOptionType[]
+    data: OptionType[]
 }
 
-export const SideMenu = ({
+const SideMenu = ({
                       openByDefault,
                       data,
                       ...props
@@ -80,7 +81,8 @@ export const SideMenu = ({
                 <div>
                     {!node.isLeaf &&
                         <div className={styles.menuItem} style={{backgroundColor: node.data.icon ? "#255486" : "",
-                            margin: node.data.icon ? "0px 0" : ""}}
+                            paddingLeft: node.data.icon ? "0px" : "24px",
+                        }}
                              onClick={node.data.onClick}>
                             <div className={styles.iconContainer}>
                                 {(node.data.icon && node.data.icon === "folder") && <img src={folder} alt=""/>}
@@ -89,9 +91,7 @@ export const SideMenu = ({
                                 {(node.data.icon && node.data.icon === "shield") && <img src={shield} alt=""/>}
                                 {(node.data.icon && node.data.icon === "comment") && <img src={comment} alt=""/>}
                                 <span style={{marginLeft: node.data.icon ? "8px" : "",
-                                    marginTop: !node.data.icon ? "10px" : "0px",
-                                    marginBottom: !node.data.icon ? "10px" : "0px",
-                                    fontSize: node.data.icon ? "14px" : "12px"}}>
+                                    fontSize: node.data.icon ? "12px" : "10px"}}>
                                     {node.data.name}</span>
                             </div>
                             <div>
@@ -108,8 +108,8 @@ export const SideMenu = ({
                     }
 
                     {node.isLeaf &&
-                        <div className={styles.menuItem} onClick={node.data.onClick}>
-                            <span>&mdash; {node.data.name}</span>
+                        <div className={styles.menuItemLeaf} onClick={node.data.onClick}>
+                            <span style={{color: "#A9BEE2"}}>&mdash; {node.data.name}</span>
                             <div className={styles.iconContainer}>
                                 {node.data.number &&
                                     <span className={styles.message} style={{backgroundColor: node.data.icon ? "#1B3F7F" : "#163964"}}>
@@ -132,7 +132,7 @@ export const SideMenu = ({
                 openByDefault={openByDefault}
                 width={"100%"}
                 indent={0}
-                rowHeight={30}
+                rowHeight={24}
                 overscanCount={1}
             >
                 {Node}

@@ -1,4 +1,6 @@
 
+@import "../styleguide.css";
+
 body {
   margin: 0;
   padding: 0;
@@ -78,8 +80,8 @@ button:defined {
 }
 
 .button-atom-l .type-primary-hover-off-icon-none {
-  background: var(--primary-40, #4551c8);
-  border: 1px solid var(--primary-40, #4551c8);
+  background: var(--primary-40, #1B3F7F);
+  border: 1px solid var(--primary-40, #1B3F7F);
   border-radius: 4px;
   padding: 8px 10px;
   display: flex;
@@ -92,8 +94,8 @@ button:defined {
   overflow: hidden;
 }
 .button-atom-l .type-primary-hover-on-icon-none {
-  background: var(--primary-60, #7985fe);
-  border: 1px solid var(--primary-60, #7985fe);
+  background: var(--primary-60, #5577B6);
+  border: 1px solid var(--primary-60, #5577B6);
   border-radius: 4px;
   padding: 8px 10px;
   display: flex;
@@ -106,8 +108,8 @@ button:defined {
   overflow: hidden;
 }
 .button-atom-l .type-primary-hover-off-icon-none:hover {
-  background: var(--primary-60, #7985fe);
-  border: 1px solid var(--primary-60, #7985fe);
+  background: var(--primary-60, #5577B6);
+  border: 1px solid var(--primary-60, #5577B6);
   border-radius: 4px;
   padding: 8px 10px;
   display: flex;
@@ -120,8 +122,8 @@ button:defined {
   overflow: hidden;
 }
 .button-atom-l .type-primary-hover-off-icon-r, .button-atom-l .type-primary-hover-off-icon-rl {
-  background: var(--primary-40, #4551c8);
-  border: 1px solid var(--primary-40, #4551c8);
+  background: var(--primary-40, #1B3F7F);
+  border: 1px solid var(--primary-40, #1B3F7F);
   border-radius: 4px;
   padding: 8px 10px;
   display: flex;
@@ -134,8 +136,8 @@ button:defined {
   overflow: hidden;
 }
 .button-atom-l .type-primary-hover-on-icon-r, .button-atom-l .type-primary-hover-on-icon-rl {
-  background: var(--primary-60, #7985fe);
-  border: 1px solid var(--primary-60, #7985fe);
+  background: var(--primary-60, #5577B6);
+  border: 1px solid var(--primary-60, #5577B6);
   border-radius: 4px;
   padding: 8px 10px;
   display: flex;
@@ -148,8 +150,8 @@ button:defined {
   overflow: hidden;
 }
 .button-atom-l .type-primary-hover-off-icon-r:hover, .button-atom-l .type-primary-hover-off-icon-rl:hover {
-  background: var(--primary-60, #7985fe);
-  border: 1px solid var(--primary-60, #7985fe);
+  background: var(--primary-60, #5577B6);
+  border: 1px solid var(--primary-60, #5577B6);
   border-radius: 4px;
   padding: 8px 10px;
   display: flex;
@@ -162,8 +164,8 @@ button:defined {
   overflow: hidden;
 }
 .button-atom-l .type-primary-hover-off-icon-l {
-  background: var(--primary-40, #4551c8);
-  border: 1px solid var(--primary-40, #4551c8);
+  background: var(--primary-40, #1B3F7F);
+  border: 1px solid var(--primary-40, #1B3F7F);
   border-radius: 4px;
   padding: 8px 10px;
   display: flex;
@@ -176,8 +178,8 @@ button:defined {
   overflow: hidden;
 }
 .button-atom-l .type-primary-hover-on-icon-l {
-  background: var(--primary-60, #7985fe);
-  border: 1px solid var(--primary-60, #7985fe);
+  background: var(--primary-60, #5577B6);
+  border: 1px solid var(--primary-60, #5577B6);
   border-radius: 4px;
   padding: 8px 10px;
   display: flex;
@@ -190,8 +192,8 @@ button:defined {
   overflow: hidden;
 }
 .button-atom-l .type-primary-hover-off-icon-l:hover {
-  background: var(--primary-60, #7985fe);
-  border: 1px solid var(--primary-60, #7985fe);
+  background: var(--primary-60, #5577B6);
+  border: 1px solid var(--primary-60, #5577B6);
   border-radius: 4px;
   padding: 8px 10px;
   display: flex;
@@ -590,15 +592,3 @@ button:defined {
   overflow: hidden;
   cursor: auto !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
